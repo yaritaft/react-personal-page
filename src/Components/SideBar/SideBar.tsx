@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button, Grid, Text, IconButton } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "../../ColorModeSwitcher";
 import { FaDiscord, FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { appName } from "../../constants";
 
 export const SideBar = () => {
   const iconProps = {
@@ -15,12 +16,12 @@ export const SideBar = () => {
   return (
     <Grid background={"black"} templateColumns="repeat(2, 1fr)" gap={"50%"} padding={5}>
       <Grid templateColumns="repeat(2, 0fr)" flexDirection="row" paddingLeft={"40%"}>
-        <Link to="/home">
+        <Link to={`${appName}/home`}>
           <Button borderRadius="md" w="80%" h="10" bg="black">
             <Text color="white">HOME</Text>
           </Button>
         </Link>
-        <Link to="/about">
+        <Link to={`${appName}/about`}>
           <Button borderRadius="md" w="80%" h="10" bg="black">
             <Text color="white">ABOUT</Text>
           </Button>

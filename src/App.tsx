@@ -6,6 +6,7 @@ import { Home } from "./Components/Home/Home";
 import { About } from "./Components/About/About";
 import { SideBar } from "./Components/SideBar/SideBar";
 import { ChakraProvider } from "@chakra-ui/react";
+import { appName } from "./constants";
 
 function App() {
   return (
@@ -15,13 +16,13 @@ function App() {
           <BrowserRouter>
           <SideBar></SideBar>
             <Switch>
-              <Route exact path="/contact">
+              <Route exact path={`${appName}/contact`}>
                 <Contact />
               </Route>
-              <Route exact path="/home">
+              <Route exact path={`${appName}/home`}>
                 <Home />
               </Route>
-              <Route exact path="/about">
+              <Route exact path={`${appName}/about`}>
                 <About />
               </Route>
             </Switch>
