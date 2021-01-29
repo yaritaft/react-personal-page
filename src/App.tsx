@@ -3,7 +3,6 @@ import React from "react";
 import { Contact } from "./Components/Contact/Contact";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Home } from "./Components/Home/Home";
-import { Blog } from "./Components/Blog/Blog";
 import { About } from "./Components/About/About";
 import { SideBar } from "./Components/SideBar/SideBar";
 import { ChakraProvider } from "@chakra-ui/react";
@@ -21,9 +20,6 @@ function App() {
               </Route>
               <Route exact path="/home">
                 <Home />
-              </Route>
-              <Route exact path="/blog">
-                <Blog />
               </Route>
               <Route exact path="/about">
                 <About />
