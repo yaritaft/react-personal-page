@@ -15,7 +15,7 @@ export const SideBar = () => {
   return (
     <Grid background={"black"} templateColumns="repeat(2, 1fr)" gap={"50%"} padding={5}>
       <Grid templateColumns="repeat(2, 0fr)" flexDirection="row" paddingLeft={"40%"}>
-        <Link to="/blog">
+        <Link to="/home">
           <Button borderRadius="md" w="80%" h="10" bg="black">
             <Text color="white">HOME</Text>
           </Button>
