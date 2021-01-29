@@ -10,7 +10,7 @@ export const Home = () => {
   //   const values = formik?.values as Values;
   return (
     <Center h="400px">
-      <Image src="https://bit.ly/sage-adebayo" borderRadius="full" boxSize="150px" />
+      <Image src="https://raw.githubusercontent.com/yaritaft/my_django_web_page/master/staticfiles/cv/images/DSC4523.c223f84f886b.jpg" borderRadius="full" boxSize="150px" />
     </Center>
   );
 };
