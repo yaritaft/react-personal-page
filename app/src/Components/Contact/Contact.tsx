@@ -1,6 +1,6 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
-import { Formik, Field, Form, FormikHelpers, useFormikContext } from 'formik';
+import { Formik, Field, Form, FormikHelpers } from 'formik';
 
 interface Values {
   firstName: string;
@@ -8,13 +8,23 @@ interface Values {
   email: string;
 }
 
-export const MyName = () => {
-//   const formik  = useFormikContext();
-const { values, submitForm } = useFormikContext();
-//   const values = formik?.values as Values;
+export const Contact = () => {
   return (
+    <Formik
+    initialValues={{
+      firstName: "",
+      lastName: "",
+      email: ""
+    }}
+    onSubmit={(values: Values, { setSubmitting }: FormikHelpers<Values>) => {
+      setTimeout(() => {
+        alert(JSON.stringify(values, null, 2));
+        setSubmitting(false);
+      }, 500);
+    }}
+  >
+    <Form>
     <div>
-      <h1>Signup</h1>
           <label htmlFor="firstName">First Name</label>
           <Field id="firstName" name="firstName" placeholder="John" />
 
@@ -22,7 +32,6 @@ const { values, submitForm } = useFormikContext();
           <Field id="lastName" name="lastName" placeholder="Doe" />
 
           <label htmlFor="email">Email</label>
-          {(values as Values)?.firstName}
           <Field
             id="email"
             name="email"
@@ -32,5 +41,8 @@ const { values, submitForm } = useFormikContext();
 
           <button type="submit">Submit</button>
     </div>
+    </Form>
+  </Formik>
+  
   );
 };
