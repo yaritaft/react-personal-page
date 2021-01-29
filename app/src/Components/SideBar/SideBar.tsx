@@ -17,12 +17,12 @@ export const SideBar = () => {
       <Grid templateColumns="repeat(2, 0fr)" flexDirection="row" paddingLeft={"40%"}>
         <Link to="/blog">
           <Button borderRadius="md" w="80%" h="10" bg="black">
-            <Text color="white">Home</Text>
+            <Text color="white">HOME</Text>
           </Button>
         </Link>
         <Link to="/about">
           <Button borderRadius="md" w="80%" h="10" bg="black">
-            <Text color="white">About</Text>
+            <Text color="white">ABOUT</Text>
           </Button>
         </Link>
       </Grid>
