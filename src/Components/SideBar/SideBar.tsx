@@ -38,7 +38,7 @@ export const SideBar = () => {
           <IconButton {...iconProps} aria-label="github" icon={<FaGithub />} />
         </a>
         <IconButton {...iconProps} aria-label="discord" icon={<FaDiscord />} />
-        <ColorModeSwitcher flexDirection={"row"} w="40%" bgColor={"black"} color={"white"} />
+        <ColorModeSwitcher  flexDirection={"row"} w="40%" bgColor={"black"} color={"dark"} />
       </Grid>
     </Grid>
   );

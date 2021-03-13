@@ -8,6 +8,8 @@ import { Container, Center } from "@chakra-ui/react";
 //   email: string;
 // }
 
+
+
 export const About = () => {
 //   const formik  = useFormikContext();
 // const { values, submitForm } = useFormikContext();
