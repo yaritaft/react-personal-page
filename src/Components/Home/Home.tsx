@@ -1,6 +1,6 @@
 import "react-app-polyfill/ie11";
 import * as React from "react";
-import { Box, Center, Container, Grid, GridItem, Heading, Image } from "@chakra-ui/react";
+import { Center, Container, Grid, GridItem, Image } from "@chakra-ui/react";
 import styled from "@emotion/styled";
 
 const AuthorMeta = styled.div`
